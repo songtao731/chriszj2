@@ -1,0 +1,77 @@
+@import "../../style/var.scss";
+
+.chris-table-search {
+  display: flex;
+
+  .chris-table-search-btns {
+    width: 350px;
+    text-align: right;
+  }
+
+  .chris-table-search-form.active {
+    height: 50px;
+    overflow: hidden;
+  }
+
+  .chris-table-search-form {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .el-input,
+    .el-select,
+    .el-cascader {
+      width: 100%;
+    }
+
+    .el-form-item {
+      padding-right: 20px;
+
+      .el-form-item__label {
+        width: 80px;
+      }
+
+      .el-form-item {
+        width: 100%;
+        padding-right: 0;
+
+        .el-form-item__label {
+          padding: 0 4px;
+        }
+      }
+
+      .el-form-item-active {
+        .el-form-item__label {
+          width: 8px;
+          margin-left: 6px;
+        }
+      }
+    }
+
+    .el-form-item-min {
+      .item-content {
+        flex: 1;
+      }
+
+      span {
+        margin: 0 2px;
+      }
+    }
+  }
+}
+
+.paginaton {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+
+.chris-table-search-form {
+  .el-form-item {
+    width: 33.33%;
+  }
+}
+
